@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phoneword.QuotesPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="5,30,0,5" Android="10,40,0,0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        
+        <StackLayout> 
+            <Button FontSize="15" Text="Next" x:Name="btnNext" Clicked="BtnNext_OnClicked"></Button>
+            <Label FontSize= "{Binding Source={x:Reference slider}, Path=Value}"
+                   Text= "{Binding Source={x:Reference slider}, Path=Value, StringFormat='Font Size: {0:F0} '}"/>
+            <Slider x:Name="slider" Maximum="100" Minimum="10"></Slider>
+            <Label FontSize= "{Binding Source={x:Reference slider}, Path=Value}" Text= "{Binding CurrentQuote}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

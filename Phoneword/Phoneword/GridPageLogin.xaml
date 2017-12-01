@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phoneword.GridPageLogin">
+    <ContentPage.Content >
+        <Grid BackgroundColor="#127ac7" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0,150,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition>Auto</RowDefinition>
+                <RowDefinition>Auto</RowDefinition>
+                <RowDefinition>10</RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Text="Welcome to Xamarin" TextColor="White" Grid.Row="0" VerticalTextAlignment="End" HorizontalOptions="Center" FontAttributes="None" FontSize="25"/>
+            <Label Text="Cross-platform apps made easy" TextColor="White" Grid.Row="1" VerticalTextAlignment="Start" HorizontalOptions="Center"/>
+            <Grid Grid.Row="2" RowSpacing="10" VerticalOptions="EndAndExpand" Padding="10,0,10,20" >
+                <Grid.RowDefinitions>
+                    <RowDefinition>*</RowDefinition>
+                    <RowDefinition>*</RowDefinition>
+                </Grid.RowDefinitions>
+                <Button  BackgroundColor="#1dabf0" Text="Login" TextColor="White" WidthRequest="50" HeightRequest="20" />
+                <Button  BackgroundColor="#1dabf0" Text="Register" Grid.Row="1" TextColor="White" HeightRequest="30" WidthRequest="50" />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
